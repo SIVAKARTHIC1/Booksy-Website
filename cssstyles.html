@@ -1,0 +1,30 @@
+<button id="result" onclick="change()">change color</button>
+<h1 id="qwe">Nmae</h1>
+<button onclick="changee(event)">siva</button>
+<button onclick="changee(event)">karthi</button>
+<button onclick="changee(event)">hero</button>
+<br>
+
+<h1 onclick="up(event)">one</h1>
+<h1 onclick="up(event)">two</h1>
+<h1 onclick="up(event)">three</h1>
+<h1 onclick="up(event)">four</h1>
+<h1 onclick="up(event)">five</h1>
+
+<script>
+    var result=document.getElementById("result")
+    var qwe=document.getElementById("qwe")
+    
+    
+    function change(){
+        result.style.backgroundColor="red"
+    }
+    
+    function changee(event){
+        qwe.textContent=event.target.textContent
+    }
+
+    function up(event){
+        event.target.remove()
+    }
+</script>

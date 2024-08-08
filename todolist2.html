@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="name">name</label>
+            <input type="name" id="name">
+            <br>
+            <label for="age">Age</label>
+            <input type="number" id="age">
+            <br>
+            <label for="gender">gender</label>
+            <label for="male">male</label>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="female">female</label>
+            <input type="radio" id="female" value="female" name="gender">
+            <br>
+            <label for="course">course</label>
+             <select>
+                <option>python</option>
+                <option>java</option>
+                <option>c</option>
+             </select>
+            <br>
+            <label for="email">Email</label>
+            <input type="mail" id="email">
+            <br>
+            <button onclick="change()">save</button>
+        </form>
+
+
+    </div>
+
+    <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>gendr</th>
+            <th>course</th>
+            <th>email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+  
+ 
+
+
+    <style>
+        .container{
+            margin: auto;
+            padding: 30px;
+            max-width: 500px;
+            border-radius: 5px;
+            border: 30px;
+            background-color: aqua;
+        }
+        .container label{
+            padding: 30px;
+            font-style: italic;
+
+        }
+        .container input{
+            border-radius: 20px;
+            box-shadow: 2px 4px 5px red;
+        }
+        .container button{
+           display: block;
+            padding: 10px;
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        /* Reset default table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Table header */
+.styled-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Table rows */
+.styled-table td, .styled-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Alternate row colors */
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+    </style>
+
+
+
+
+<script>
+    var container=document.getElementsByClassName("container")
+    
+</script>
+    
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,59 @@
+
+<style>
+    .overlay{
+        background-color: rgb(90, 89, 89);
+        height: 100%;
+        width: 100%;
+        opacity: 0.8px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        display: none;
+
+
+    }
+    .popup{
+        position: absolute;
+        z-index: 2;
+        background-color: aliceblue;
+        color: black;
+        width: 40%;
+        padding: 20px;
+        display: none;
+    }
+  
+</style>
+
+<button onclick="add()">show</button>
+<div class="overlay"></div>
+<div class="popup">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi iure dolorem pariatur repellat inventore atque omnis sapiente quae explicabo, vel quidem. Voluptas illo illum deleniti aperiam exercitationem, cupiditate sed?</p>
+    <button onclick="deleteitem()">close</button>
+</div>
+
+<button id="click">click</button>
+
+
+<script>
+    var op=document.querySelector(".overlay")
+    var container=document.querySelector(".popup")
+
+    var btn=document.getElementById("click")
+    function add(){
+        op.style.display="block"
+        container.style.display="block"
+    }
+    function deleteitem(){
+        op.style.display="none"
+        container.style.display="none"
+    }
+
+    btn.addEventListener("click",function(){
+        alert("hello")
+
+    })
+
+    
+
+</script>

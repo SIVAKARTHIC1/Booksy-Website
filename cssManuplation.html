@@ -1,0 +1,47 @@
+<style>
+    div{
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        transition: 2s;
+    }
+    .widthmax{
+        width: 900px;
+    }
+</style>
+
+<div id="box"></div>
+<button onclick="change()">change</button>
+<br>
+<input id="siva" onkeyup="dduck()">
+<h1 id="read"></h1>
+<br>
+<button onclick="update()">add</button>
+<div id="result"></div>
+
+<script>
+    var box=document.getElementById("box")
+    function change(){ 
+        box.style.backgroundColor="blue"
+        box.setAttribute("class","widthMax")
+    }
+    var siva=document.getElementById("siva")
+    var read=document.getElementById("read")
+
+    function dduck(){
+      
+        read.textContent=siva.value
+    }
+
+    var div=document.getElementById("result")
+
+
+    function update(){
+        var list=document.createElement("h1")
+        list.textContent="hello"
+        div.append(list)
+    }
+
+
+
+</script>
